@@ -1,6 +1,5 @@
 import streamlit as st
 
-
 ##################################### SIDE BAR #######################################
 def sidebar():
     st.sidebar.title("User Authentication")
@@ -8,8 +7,7 @@ def sidebar():
     email = st.sidebar.text_input("Email")
     list_departments = ["DA", "TDAA"]
     department = st.sidebar.selectbox("Select Department", list_departments)
-    password = st.sidebar.text_input("Password", type="password")
-
+    password = st.sidebar.text_input("Password", type="password", key="password")
 
     if st.sidebar.button("Login"):
         if authenticate_user(email, password):
@@ -22,10 +20,11 @@ def sidebar():
         else:
             st.sidebar.error("Invalid email or password")
 
+def authenticate_user(email, password):
+    # This is a placeholder function for user authentication.
+    # Replace it with your actual authentication logic.
+    return email == "user@example.com" and password == "password"
+
 if __name__ == "__main__":
-    st.run(app="app.py", server_port=8000, server_address='0.0.0.0')
-
-
     st.set_page_config(page_title="Translation Service", page_icon="📖", layout="wide")
-
     sidebar()
