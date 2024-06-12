@@ -22,6 +22,10 @@ def sidebar():
         else:
             st.sidebar.error("Invalid email or password")
 
-st.set_page_config(page_title="Translation Service", page_icon="📖", layout="wide")
+if __name__ == "__main__":
+    st.run(app="app.py", server_port=8000, server_address='0.0.0.0')
 
-sidebar()
+
+    st.set_page_config(page_title="Translation Service", page_icon="📖", layout="wide")
+
+    sidebar()
