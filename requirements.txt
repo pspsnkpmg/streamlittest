@@ -9,5 +9,3 @@ importlib_metadata==4.8.1
 docx==0.2.4
 fitz==0.0.1.dev2
 gibberish_detector==0.1.1
-
-
