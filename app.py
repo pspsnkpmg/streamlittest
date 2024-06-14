@@ -2,7 +2,7 @@ import streamlit as st
 
 ##################################### SIDE BAR #######################################
 def sidebar():
-    st.sidebar.title("User Authentication")
+    st.sidebar.title("No fitz User Authentication")
     
     email = st.sidebar.text_input("Email")
     list_departments = ["DA", "TDAA"]
@@ -27,5 +27,4 @@ def authenticate_user(email, password):
 
 if __name__ == "__main__":
     st.set_page_config(page_title="Translation Service", page_icon="📖", layout="wide")
-    st.write("no fitz")
     sidebar()
