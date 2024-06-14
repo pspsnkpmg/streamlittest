@@ -26,6 +26,5 @@ def authenticate_user(email, password):
     return email == "user@example.com" and password == "password"
 
 if __name__ == "__main__":
-    st.set_page_config(page_title="Translation Service", page_icon="📖", layout="wide")
-    st.write(addfitz)
+    st.set_page_config(page_title="Add fitz Translation Service", page_icon="📖", layout="wide")
     sidebar()
