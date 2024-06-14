@@ -27,4 +27,5 @@ def authenticate_user(email, password):
 
 if __name__ == "__main__":
     st.set_page_config(page_title="Translation Service", page_icon="📖", layout="wide")
+    st.write(addfitz)
     sidebar()
